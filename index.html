@@ -4,58 +4,103 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Thees Budde</title>
+<meta name="description" content="Thees Budde. Law student at Bucerius, currently on exchange at Penn Carey Law.">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="top">
 
-<div class="hero-bg">
-  <img class="hero-img" src="assets/hero.jpg" alt="">
-  <div class="hero-overlay"></div>
-</div>
+<a class="wordmark" href="#top">Thees Budde</a>
 
-<header class="hero">
-  <h1>Thees Budde</h1>
+<header class="topbar">
+  <nav aria-label="Main">
+    <a href="#currently">Currently</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-<main class="content">
-  <div class="content-inner">
+<main class="shell">
 
-    <p class="tagline">Drawn to how things are argued and how they add up.</p>
+  <section class="hero">
+    <figure class="hero-media">
+      <img src="assets/hero.jpg" alt="Wanderer above the Sea of Fog by Caspar David Friedrich">
+    </figure>
+    <div class="hero-copy">
+      <p class="label">Law student</p>
+      <h1>Drawn to how things are argued and how they add up.</h1>
+      <p class="lead">At Bucerius in Hamburg, currently on exchange at Penn Carey Law in Philadelphia.</p>
+      <a class="cta" href="#contact">Get in touch <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </section>
 
-    <section class="block">
-      <h2>Currently</h2>
-      <ul>
-        <li>Law Student @ Bucerius</li>
-        <li>Exchange @ Penn Carey Law</li>
-      </ul>
-    </section>
+  <section class="split" id="currently">
+    <div class="panel">
+      <blockquote class="panel-quote">
+        <p>&ldquo;When I use a word, it means just what I choose it to mean&mdash;neither more nor less.&rdquo;</p>
+        <footer>Humpty Dumpty, <cite>Through the Looking-Glass</cite></footer>
+      </blockquote>
+    </div>
+    <div class="currently-col">
+    <p class="label label--bar">Currently</p>
+    <ul class="rows">
+      <li>
+        <a href="https://www.law-school.de">
+          <span class="row-text"><span class="row-title">Law Student</span><span class="row-sub">Bucerius</span></span>
+          <span class="arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.law.upenn.edu">
+          <span class="row-text"><span class="row-title">Exchange</span><span class="row-sub">Penn Carey Law</span></span>
+          <span class="arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+    </ul>
+    </div>
+  </section>
 
-    <section class="block">
-      <p class="coffee">Always happy to grab a coffee.</p>
+  <section class="split contact" id="contact">
+    <div class="contact-intro">
+      <p class="label label--bar">Contact</p>
+      <h2>Always happy to grab a coffee.</h2>
+    </div>
+    <ul class="rows rows--contact">
+      <li>
+        <a href="ts3server://yam">
+          <span class="row-key">TeamSpeak</span>
+          <span class="row-value">yam</span>
+          <span class="arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://de.linkedin.com/in/thees-budde">
+          <span class="row-key">LinkedIn</span>
+          <span class="row-value">thees-budde</span>
+          <span class="arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:thees.budde@law-school.de">
+          <span class="row-key">Email</span>
+          <span class="row-value row-value--nowrap">thees.budde&#128140;law-school.de</span>
+          <span class="arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+    </ul>
+  </section>
 
-      <dl class="contact-list">
-        <div class="contact-row">
-          <div class="contact-item">
-            <dt>TeamSpeak</dt>
-            <dd><a href="ts3server://yam">yam</a></dd>
-          </div>
-          <div class="contact-item">
-            <dt>LinkedIn</dt>
-            <dd><a href="https://de.linkedin.com/in/thees-budde">thees-budde</a></dd>
-          </div>
-        </div>
-        <div class="contact-item contact-item--email">
-          <dd><a href="mailto:thees.budde@law-school.de">thees.budde&#128140;law-school.de</a></dd>
-        </div>
-      </dl>
-    </section>
-
-  </div>
 </main>
 
-<script src="script.js"></script>
+<footer class="footer">
+  <p>2026 Thees Budde</p>
+</footer>
+
+<a class="scroll-tab" href="#currently" aria-label="Scroll down"><span aria-hidden="true">&darr;</span></a>
+
 </body>
 </html>
