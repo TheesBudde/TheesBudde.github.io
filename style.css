@@ -265,18 +265,6 @@ h2 {
 .row-value { font-size: clamp(1.15rem, 1.7vw, 1.5rem); }
 .row-value--nowrap { white-space: nowrap; }
 
-/* Footer */
-.footer {
-  padding: 28px var(--pad-x) 40px clamp(96px, 10vw, 168px);
-  border-top: 1px solid var(--line);
-  margin-left: clamp(96px, 10vw, 168px);
-  padding-left: 0;
-  font-size: 0.85rem;
-  color: var(--ink-soft);
-}
-
-.footer p { margin: 0; }
-
 /* Scroll tab */
 .scroll-tab {
   position: fixed;
@@ -343,10 +331,4 @@ h2 {
   }
 
   .row-key { grid-column: 1 / -1; }
-
-  .footer {
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 24px 0 36px;
-  }
 }
