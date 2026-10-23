@@ -178,17 +178,21 @@ h1 {
   gap: 28px;
 }
 
-.currently-col {
+/* Right column fills the section row: lists on top, photo at the bottom. */
+.split-col {
   grid-column: 2;
   grid-row: 1;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 64px;
 }
 
 /* Same size as the panel (5/6 of the 6fr column = 5fr), bottom-aligned so the two
    boxes sit side by side once the sticky panel reaches the end of the section. */
 .photo {
-  grid-column: 2;
-  grid-row: 1;
-  align-self: end;
+  flex: 0 0 auto;
   width: calc(100% * 5 / 6);
   height: var(--box-h);
   margin: 0;
@@ -241,6 +245,29 @@ h2 {
 .panel-quote cite { font-style: normal; }
 
 .currently-col .label { margin-bottom: 20px; }
+.currently-col .label--spaced { margin-top: 56px; }
+
+/* Pixel sprite: 8px art pixels shown at half size (96px wide = 4px per pixel) */
+.sprite {
+  position: relative;
+  flex: 0 0 auto;
+  width: 96px;
+  height: 60px;
+  margin-left: auto;
+}
+
+.sprite img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 96px;
+  height: auto;
+  image-rendering: pixelated;
+}
+
+.sprite-hover { opacity: 0; }
+.rows a:hover .sprite-rest { opacity: 0; }
+.rows a:hover .sprite-hover { opacity: 1; }
 
 /* Rows */
 .rows {
@@ -403,11 +430,12 @@ h2 {
   }
 
   .panel,
-  .currently-col,
-  .photo {
+  .split-col {
     grid-column: auto;
     grid-row: auto;
   }
+
+  .split-col { gap: 40px; }
 
   .panel {
     position: static;
