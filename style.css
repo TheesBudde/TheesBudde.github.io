@@ -246,6 +246,7 @@ h2 {
 
 .currently-col .label { margin-bottom: 20px; }
 .currently-col .label--spaced { margin-top: 56px; }
+#projects { scroll-margin-top: 140px; }
 
 /* Pixel sprite: 8px art pixels shown at half size (96px wide = 4px per pixel) */
 .sprite {
@@ -463,4 +464,9 @@ h2 {
   .fields { gap: 32px; }
 
   .wordmark--light { display: none; }
+}
+
+@media (max-width: 420px) {
+  .topbar nav { gap: 13px; }
+  .topbar a { font-size: 0.82rem; }
 }
